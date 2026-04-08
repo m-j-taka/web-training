@@ -86,6 +86,19 @@
         <button>送信</button>
     </form>
 
+    <hr>
+
+    <h2>バリデーション Demo</h2>
+    <form action="/dummy">
+        <label for="first">名前：</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="usrname">ユーザ名</label>
+            <input type="text" name="usrname" id="usrname" minlength="5" maxlength="9" required>
+        </p>
+        <button>送信</button>
+    </form>
+
 
 </body>
 
