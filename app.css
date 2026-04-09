@@ -1,10 +1,15 @@
 h1 {
-    text-align: centers;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 10px;
+    font-size: 50px;
+    font-family: Futura,serif;
 }
 
 h2 {
     color: teal;
     background-color: yellow;
+    text-decoration: red line-through wavy;
 }
 
 button {
@@ -15,5 +20,7 @@ button {
 p {
     color: aquamarine;
     background-color: blueviolet;
+    /* font-weight: 700; */
+    /* line-height: 2; */
 }
 /* ちょっとさすがに配色にセンスなさすぎる */
