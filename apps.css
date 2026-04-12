@@ -24,3 +24,16 @@ h1, h2 {
     background-color: red;
     color: azure;
 }
+
+span a {
+    color: rgb(8, 121, 83);
+}
+
+footer a {
+    color: red;
+}
+
+button:hover {
+    background-color: red;
+    color:azure;
+}
