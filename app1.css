@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 div {
     width: 200px;
     height: 300px;
@@ -7,6 +11,11 @@ div {
 h1 {
     background-color: pink;
     width: 200px;
+    margin: 0;
+}
+
+span {
+    margin-left: 5px;
 }
 
 #one {
