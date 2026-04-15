@@ -7,4 +7,7 @@ h1 {
 span {
     background-color: paleturquoise;
     border: solid 1px black;
+    display: inline-block;
+    width: 500px;
+    text-align: center;
 }
