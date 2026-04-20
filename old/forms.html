@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormDemo</title>
+</head>
+
+<body>
+    <h1>Form Demo</h1>
+
+    <button>外部ボタン</button>
+
+    <form action="/tacos">
+        <button>送信1</button>
+        <p>
+            <label for="username">ユーザ名：</label>
+            <input id="username" type="text" placeholder="ユーザ名" name="username">
+        </p>
+        <p>
+            <label for="password">パスワード：</label>
+            <input id="password" type="password" placeholder="パスワード" name="password">
+        </p>
+        <button>送信2</button>
+        <p>
+            <label for="color">好きな色：</label>
+            <input id="color" type="color" name="color">
+        </p>
+        <p>
+            <label for="number">数値：</label>
+            <input id="number" type="number" placeholder="数字を入力してください" name="num">
+        </p>
+        <button>送信!!!!!!!!!!!!!!!!</button>
+        <input type="submit" value="soushin">
+    </form>
+
+    <hr>
+
+    <h2>ハイジャック検索</h2>
+    <h3>Google検索</h3>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>グーグル検索</button>
+    </form>
+    <h3>YouTube検索</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>youtube検索</button>
+    </form>
+
+    <hr>
+
+    <h2>続・Input!</h2>
+    <form action="/birds">
+        <p>
+            <input type="checkbox" name="agree_tos" id="agree">
+            <label for="agree">利用規約に同意します</label>
+        </p>
+        <p>
+            <label for="s">S:</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">M:</label>
+            <input type="radio" name="size" id="m" value="m">
+            <label for="l">L:</label>
+            <input type="radio" name="size" id="l" value="l">
+        </p>
+        <p>
+            <label for="meal">食事を選択してください</label>
+            <select name="meal" id="meal">
+                <option value="" selected>-- 選択してください --</option>
+                <option value="fish">焼き魚</option>
+                <option value="salad">サラダ</option>
+                <option value="steak">ステーキ</option>
+            </select>
+        </p>
+        <p>
+            <label for="cheese">チーズの量</label>
+            <input type="range" name="cheese" id="cheese" min="1" max="100" step="7" value="58">
+        </p>
+        <p>
+            <label for="comments">その他コメント：</label>
+            <br>
+            <textarea name="comments" id="comments" rows="3" cols="40" placeholder="コメントを入力してください"></textarea>
+        </p>
+        <button>送信</button>
+    </form>
+
+    <hr>
+
+    <h2>バリデーション Demo</h2>
+    <form action="/dummy">
+        <label for="first">名前：</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="usrname">ユーザ名</label>
+            <input type="text" name="usrname" id="usrname" minlength="5" maxlength="9" required>
+        </p>
+        <p>
+            <!-- <input type="email" name="" id="" required> -->
+             <input type="url" name="" id="">
+        </p>
+        <button>送信</button>
+    </form>
+
+
+</body>
+
+</html>
